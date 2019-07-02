@@ -1,18 +1,28 @@
-window.addEventListener('load', function(){
+window.onload = function () {
 
-  var input = document.querySelector('input');
-  // var button = document.querySelector('button'); // captura el boton HOLA
-  var addTask = document.querySelector('form button'); // captura el boton del form
-  //console.log(input.getAttribute('value'));
-  var ul = document.querySelector('ul');
+ var button = document.querySelector('form button');
+ var ul = document.querySelector('ul');
 
 
-  addTask.onclick = function(){
-  var createLi = document.createElement('li');
-  //console.log(input.getAttribute('value'));
-  createLi.innerText = input.value;
-  ul.append(createLi);
-  input.value = ''; //luego de darle al boton agregar, el value queda vacio
-  }
+button.addEventListener('click', function() {
+ console.log("se agrega");
+ var input = document.querySelector('input');
+ var li = document.createElement('li');
+ li.innerHTML = input.value + " " + "<a href='#'>" + "Eliminar" + "</a>";
+ ul.append(li);
 
-})
+li.children[0].onclick = function () {
+ ul.removeChild(this.parentElement);
+// console.log(ul.children.length);
+ if (ul.children.length === 0) {
+   alert('Has cumplido tus tareas!');
+ }
+}
+
+
+});
+
+
+
+
+}
