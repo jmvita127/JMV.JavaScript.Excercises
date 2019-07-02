@@ -8,10 +8,10 @@ window.addEventListener('load', function(){
 
 
   addTask.onclick = function(){
-  var crearLi = document.createElement('li');
+  var createLi = document.createElement('li');
   //console.log(input.getAttribute('value'));
-  crearLi.innerText = input.value;
-  ul.append(crearLi);
+  createLi.innerText = input.value;
+  ul.append(createLi);
   input.value = ''; //luego de darle al boton agregar, el value queda vacio
   }
 
