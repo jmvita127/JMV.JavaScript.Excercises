@@ -1,10 +1,10 @@
 window.onload = function () {
 
- var button = document.querySelector('form button');
+ var addTask = document.querySelector('form button');
  var ul = document.querySelector('ul');
 
 
-button.addEventListener('click', function() {
+addTask.addEventListener('click', function() {
  console.log("se agrega");
  var input = document.querySelector('input');
  var li = document.createElement('li');
