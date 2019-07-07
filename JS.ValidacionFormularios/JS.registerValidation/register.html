@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <div class="container-fluid" style="max-width: 550px;">
+      <h1>JS - REGISTER VALIDATION</h1>
+
+    <form class="formR" action="register.html" method="post">
+      <div class="form-group">
+
+      <div class="">
+        <label for="">Full Name:</label>
+        <input type="text" class="form-control is-invalid" id="name" name="name" value="" autocomplete="name">
+        <br>
+      </div>
+
+
+      <div class="">
+        <label for="">Email:</label>
+        <input type="text" class="form-control is-invalid" id="email" name="email" value="" autocomplete="email">
+        <br>
+      </div>
+
+      <div class="">
+        <label for="">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" value="" autocomplete="current-password">
+        <br>
+      </div>
+
+      <div class="">
+        <label for="">Confirm Password:</label>
+        <input type="password" class="form-control" id="confirm-password" name="confirm-password" value="" autocomplete="current-password">
+        <br>
+      </div>
+
+      <div class="">
+        <label for="">Avatar:</label>
+        <input type="file" name="avatar" value="" class="form-control is-invalid">
+        <br>
+      </div>
+
+
+      <button type="submit" name="button" class="btn btn-danger">Send</button>
+      <br>
+      <span>NOTA: Este tipo de register-validaton valida los los input si estan vacios o si posee simbolos con JS (VALIACION LADO DEL CLIENTE).</span>
+      <br>
+      <span>NOTA: Se recomienda recargar la pagina por cada validacion que se quiera intentar.</span>
+
+
+      </div>
+    </form>
+    </div>
+    <script type="text/javascript" src="register.js"></script>
+  </body>
+</html>

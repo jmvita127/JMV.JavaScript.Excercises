@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="login.js">
+
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid" style="max-width: 500px;">
+      <h1>JS - LOGIN VALIDATION</h1>
+
+    <form class="form" action="login.html" method="post">
+      <div class="form-group">
+
+      <div class="">
+        <label for="">Email:</label>
+        <input type="text" class="form-control is-invalid" id="email" name="email" value="" autocomplete="email">
+        <br>
+      </div>
+
+      <div class="">
+        <label for="">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" value="" autocomplete="current-password">
+        <br>
+      </div>
+
+      <button type="submit" name="button">Send</button>
+      <br>
+      <span>NOTA: Este tipo de login-validaton valida los los input si estan vacios o si posee simbolos con JS (VALIACION LADO DEL CLIENTE).</span>
+      <br>
+      <span>NOTA: Se recomienda recargar la pagina por cada validacion que se quiera intentar.</span>
+
+
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
