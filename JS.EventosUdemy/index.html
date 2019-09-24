@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 1.Formulario nombre, apellido, edad -->
+<!-- 2.Boton de enviar fomulario -->
+<!-- 3.Mostrar datos por pantalla -->
+<!-- 4.Tener un boton que al darle click, nos muestra los datos actuales del form -->
+<!-- 5.Validacion del formulario -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dom, eventos y funciones</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <h1>Seccion 19: Dom, eventos y funciones</h1>
+    <div class="box">
+    <form id="formulario" action="#" method="post" onsubmit="return false">
+
+      <label for="nombre">Nombre:</label> <br>
+      <input type="text" name="nombre" id="nombre"> <br>
+
+      <label for="apellidos">Apellidos:</label> <br>
+      <input type="text" name="apellidos" id="apellidos"> <br>
+
+      <label for="edad">Edad:</label> <br>
+      <input type="text" name="edad" id="edad"> <br>
+
+      <button type="submit" name="button">Cargar datos</button>
+    </form>
+    </div>
+
+    <div class="datos">
+      <h4>DATOS DEL USUARIO</h4>
+      <hr>
+      <p id="p_nombre">
+        NOMBRE: <span></span>
+      </p>
+
+      <p id="p_apellidos">
+        APELLIDO: <span></span>
+      </p>
+
+      <p id="p_edad">
+        EDAD: <span></span>
+      </p>
+    </div>
+
+  <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

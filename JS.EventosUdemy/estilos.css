@@ -1,0 +1,19 @@
+.box
+{
+  text-align: center;
+}
+
+h1
+{
+  text-align: center;
+}
+
+.datos
+{
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+  border-style: dashed;
+  padding: 5px;
+}

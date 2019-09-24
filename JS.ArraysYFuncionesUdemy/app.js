@@ -41,7 +41,7 @@ mostrarArray(numeros, ' invertido:');
 //contar elementos del Array
 document.write('<h1> El array tiene: '+numeros.length+' elementos</h1>');
 
-//Busqueda
+//Busqueda de la posicion de un numero 
 var  busqueda = parseInt(prompt('BUSCA UN NUMERO',0));
 
 var posicion = numeros.findIndex(numero => numero == busqueda);
